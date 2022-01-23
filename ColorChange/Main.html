@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            ChangeColor
+        </title>
+        <script type="text/javascript">
+            function change()
+            {
+                var a = window.prompt("Enter the color : ");
+                document.body.style.backgroundColor = a;    
+            }
+        </script>
+        <style>
+            div
+            {
+                margin: auto;
+                background-color: cadetblue;
+                border: 2px solid;
+                border-radius: 17px;
+                height: 150px;
+                width: 30%;
+                padding: 9px;
+            }
+            p
+            {
+                font-family: serif;
+                font-size: 30px;
+                text-align: center;
+            }
+            input
+            {
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 2px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p><B>Background Color</B></p>
+            <center>
+                <input type="button" onclick="change()" value="Change">
+            </center>
+        </div>
+    </body>
+</html>
