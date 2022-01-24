@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            UDCounter
+        </title>
+        <style>
+            body
+            {
+                background-image: url("../Images/R10.jpg");
+                background-size: 1366px 663px;
+                background-repeat: no-repeat;
+            }
+            .header_div
+            {
+                height: 60px;
+                width: 100%;
+                border: 1px solid green;
+                border-radius: 5px;
+                background-color: rgb(151, 151, 151);
+                text-align: center;
+                padding: 10px 0px 0px 0px;
+                word-spacing: 24em;
+
+            }
+            .Counter_div
+            {
+                height: 400px;
+                width : 50%;
+                border: 2px solid blue;
+                border-radius: 5px;
+                background-color: rgb(225, 100, 237);
+                margin-top: 6%;
+                margin-left: 25%;
+                
+            }
+            a
+            {
+                text-decoration: none;
+                font-size: 200%;
+                
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+        <script type="text/javascript">
+            function AboutUS()
+            {
+                alert("All the things are present on this page what are you finding hear and there.");
+                alert("Focus on your work.");
+            }
+            function increment()
+            {
+                
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header_div">
+            <span>
+                <a href="UserDefinedCounter.html">
+                    <B> HOME </B>
+                </a>            
+            </span>
+            <span>
+                <a href="UserDefinedCounter.html" onclick="AboutUS()">
+                    <B> ABOUT </B>
+                </a>
+            </span>
+        </div>
+        <div class="Counter_div">
+            <button class="butStyle" onclick="increment()">
+                Increment
+            </button>
+        </div>
+    </body>
+</html>
