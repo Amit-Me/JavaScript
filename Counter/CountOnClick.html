@@ -41,6 +41,28 @@
                 
                 font-family: 'Times New Roman', Times, serif;
             }
+            button
+            {
+                margin: auto;
+                border: 2px solid purple;
+                border-radius: 5px;
+                padding: 5px;
+            }
+            .oneinner
+            {
+                height: auto;
+                font-size: xx-large;
+            }
+            .twoinner
+            {
+                font-size: x-large;
+            }
+            .threeinner
+            {
+                height: 60px;
+                margin: 50px;
+                
+            }
         </style>
         <script type="text/javascript">
             function AboutUS()
@@ -50,8 +72,13 @@
             }
             function increment()
             {
-                var a = 0;
-                document.getElementsByName("Increase").innerHTML = a+1;
+                var i = document.getElementById("Increase").value;
+                var r = document.getElementById("Reset").value;
+                var d = document.getElementById("Decrease").value;
+                if(i == "Increase")
+                {
+                    
+                }
             }
         </script>
     </head>
@@ -69,9 +96,25 @@
             </span>
         </div>
         <div class="Counter_div">
-            <button class="butStyle" onclick="increment()">
-                Increment
-            </button>
+            <center>
+            <div class="oneinner">
+                <H1>Counter</H1>
+            </div>
+            <div class="twoinner">
+                <p id="Change">0</p>
+            </div>
+            <div class="threeinner">
+                <button class="butStyle" onclick="increment()" id="Decrease">
+                    DECREASE
+                </button>
+                <button class="butStyle" onclick="increment()" id="Reset">
+                    RESET
+                </button>
+                <button class="butStyle" onclick="increment()" id="Increase">
+                    INCREASE
+                </button>
+            </div>
+            </center>
         </div>
     </body>
 </html>
